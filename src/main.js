@@ -1,5 +1,5 @@
 import getActivityUser from './getActivityUser.js'
-import getLeetcode from './getLeetcode.js'
+import getLeetCode from './getLeetCode.js'
 import {
   setLeetCodeHistory,
   getLeetCodeHistoryCount,
@@ -10,7 +10,7 @@ import sendMessage from './sendMessage.js'
 const userList = await getActivityUser()
 for (const user of userList) {
   console.log(`开始获取Leetcode数据：${JSON.stringify(user)}`)
-  const leetcode_data = await getLeetcode(user.leetcode_id)
+  const leetcode_data = await getLeetCode(user.leetcode_id)
   if (Object.keys(leetcode_data).length === 0) {
     console.log(`获取Leetcode数据失败：${user.name},${user.leetcode_id}`)
     continue
