@@ -1,0 +1,23 @@
+{
+  "name": "leetcode-learning-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "dotenvx run -f .env.development -- node src/main.js",
+    "prod": "dotenvx run -f .env.production -- node src/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@larksuiteoapi/node-sdk": "^1.46.0",
+    "axios": "^1.8.4"
+  },
+  "devDependencies": {
+    "@dotenvx/dotenvx": "^1.39.1",
+    "prettier": "3.5.3"
+  }
+}
