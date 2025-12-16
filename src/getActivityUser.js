@@ -12,6 +12,14 @@ const getActivityUser = async () => {
         user_id_type: 'open_id',
         page_size: 20,
       },
+      data: {
+        filter: {
+          conjunction: 'and',
+          conditions: [
+            { field_name: '参与打卡', operator: 'is', value: ['参与'] },
+          ],
+        },
+      },
     })
     .then((res) => {
       res.data.items.forEach((item) => {
