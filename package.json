@@ -13,11 +13,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@larksuiteoapi/node-sdk": "^1.46.0",
-    "axios": "^1.8.4"
+    "@larksuiteoapi/node-sdk": "^1.55.0",
+    "axios": "^1.13.2"
   },
   "devDependencies": {
-    "@dotenvx/dotenvx": "^1.39.1",
+    "@dotenvx/dotenvx": "^1.51.2",
     "prettier": "3.5.3"
   }
 }
